@@ -111,6 +111,8 @@
 }
 
 .main-nav__item {
+  min-height: 56px;
+
   @media (min-width: @tablet-width) {
     min-width: 153px;
   }
@@ -121,7 +123,9 @@
 }
 
 .main-nav__link {
+  box-sizing: border-box;
   display: block;
+  min-height: 56px;
   padding-top: 17px;
   padding-bottom: 12px;
   font-family: "PT Sans", sans-serif;
@@ -137,6 +141,8 @@
   border-top: solid 1px fade(#ffffff, 20%);
 
   @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
     color: #000000;
     background-color: #ffffff;
     border: none;

@@ -39,9 +39,12 @@
 }
 
 .advantages__item--1 {
-
-  background-image: -webkit-image-set( url("/img/advantages-item-1.jpg") 1x,
-                                url("/img/advantages-item-1@2x.jpg") 2x);
+  background-image: -webkit-image-set(
+    url("/img/advantages-item-1.webp")1x,
+    url("/img/advantages-item-1.jpg")1x,
+    url("/img/advantages-item-1@2x.webp")2x,
+    url("/img/advantages-item-1@2x.jpg")2x
+  );
   background-repeat: no-repeat;
   background-position: center;
 
@@ -52,7 +55,7 @@
 
 .advantages__item--2 {
 
-  background-image: -webkit-image-set( url("/img/advantages-item-2.jpg") 1x,
+  background-image: image-set( url("/img/advantages-item-2.jpg") 1x,
                                 url("/img/advantages-item-2@2x.jpg") 2x);
   background-repeat: no-repeat;
   background-position: center;
@@ -96,9 +99,12 @@
   justify-content: center;
   padding: 24px;
   align-items: center;
+  background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
+    min-height: 330px;
     padding: 36px;
+    padding-top: 60px;
   }
 }
 
@@ -113,7 +119,7 @@
   margin-bottom: 11px;
 
   font-family: "PT Sans", sans-serif;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
@@ -122,12 +128,7 @@
 }
 
 .advantages__title--primary {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
   color: #ffffff;
-  text-transform: uppercase;
 }
 
 .advantages__image {

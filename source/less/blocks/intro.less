@@ -1,5 +1,6 @@
 .intro {
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
   justify-content: space-between;
   max-width: @mobile-width;
@@ -14,10 +15,14 @@
 
   @media (min-width: @tablet-width) {
     max-width: @tablet-width;
+    min-height: 518px;
+    padding-top: 77px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: @desktop-width;
+    min-height: 518px;
+    padding-top: 78px;
   }
 }
 
@@ -25,6 +30,11 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
 }
 
 .intro__decoration {
